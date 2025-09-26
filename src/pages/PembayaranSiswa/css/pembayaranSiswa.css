@@ -1,0 +1,225 @@
+/* Pembayaran siswa */
+
+.pembayaran-siswa {
+    padding: 10px;
+    border-radius: 10px;
+    border-top: solid 5px var(--dark-content);
+    box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 15px;
+}
+
+.filter-data {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.thn-ajrn {
+    width: 60%;
+}
+
+.info-santri {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    border-top: solid 5px var(--dark-content);
+    box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin: auto;
+}
+
+.info-santri h6 {
+    width: 250px;
+}
+
+.data-santri {
+    width: 100%;
+    margin: 20px 50px 20px 50px;
+}
+
+.data-santri table {
+    min-width: 300px;
+    width: 100%;
+    max-width: 500px;
+    line-height: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.data-santri table tr {
+    flex: 1;
+    display: flex;
+    border-bottom: 1px solid var(--dark-content);
+    font-size: 0.8rem;
+}
+.data-santri table td {
+    flex: 1;
+    border-bottom: 1px solid var(--dark-content);
+    font-size: 0.8rem;
+}
+.data-santri table td.colon {
+    flex: 0.1;
+    font-size: 0.8rem;
+}
+
+.Image-siswa {
+    width: 40%;
+    margin: 20px 50px 20px 50px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.Image-siswa img {
+    width: 100%;
+}
+
+.jenis-bayar {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border-top: solid 5px var(--dark-content);
+    box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-top: 20px;
+}
+
+.Jenis-Pembayaran {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border-top: solid 5px var(--dark-content);
+    box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1600px) {
+    .Jenis-Pembayaran {
+    }
+}
+
+.no-refrensi {
+    display: flex;
+    width: 500px;
+    border-top: 1px solid var(--dark-content);
+    padding: 10px;
+    margin: 10px;
+}
+
+.transaksi-historiPembayaran {
+    width: 100%;
+    flex: 3;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-top: 20px;
+}
+
+.pembayaran-history {
+    width: 100%;
+    border: 1px solid grey;
+    padding: 2px;
+    border-radius: 10px;
+}
+
+.kalkulator {
+    flex: 1;
+    margin: 1rem 0 0 1rem;
+    border-radius: 10px;
+
+    padding: 5px;
+}
+.kalkulator h6 {
+    padding: 5px;
+}
+
+.wrapping {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        'total dibayar'
+        'kembalian kembalian';
+    width: 300px;
+
+    border-radius: 10px;
+}
+.total {
+    grid-area: total;
+}
+.dibayar {
+    grid-area: dibayar;
+}
+
+.kembalian {
+    grid-area: kembalian;
+}
+.input-text {
+    padding: 5px;
+}
+
+.bukti-pembayaran {
+    width: 100%;
+    padding: 10px;
+    border-top: 1px solid var(--dark-content);
+    margin-top: 40px;
+}
+.date {
+    margin-bottom: 20px;
+}
+
+.cetak-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Pembayaran siswa */
+
+.nav-tabs .nav-link {
+    font-size: 0.8rem;
+    color: black;
+}
+
+.detail-pembayaran-table {
+    width: 100%;
+    font-size: 0.8rem;
+    border-collapse: separate;
+    border-spacing: 20px 16px;
+}
+.detail-pembayaran-table td {
+    padding: 0px 10px;
+}
+.detail-pembayaran-table tfoot td {
+    font-weight: bold;
+}
+
+.history-pembayaran-table {
+    width: 100%;
+    font-size: 0.8rem;
+    border-collapse: collapse;
+}
+
+.history-pembayaran-table,
+.history-pembayaran-table td,
+.history-pembayaran-table th {
+    border-bottom: 1px solid #ddd;
+}
+.history-pembayaran-table tfoot td {
+    font-weight: bold;
+    color: black;
+}
+
+table.history-pembayaran-table,
+.history-pembayaran-table th,
+.history-pembayaran-table,
+.history-pembayaran-table td {
+    padding: 10px 0.5rem;
+    text-align: left;
+}
