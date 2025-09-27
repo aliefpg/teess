@@ -1,7 +1,7 @@
 {
     "name": "dashboard-admin",
     "private": true,
-    "homepage": "https://laristeknologi.com",
+    "homepage": "https://teess-eight.vercel.app/login",
     "version": "0.0.0",
     "type": "module",
     "scripts": {
