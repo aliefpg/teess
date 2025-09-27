@@ -4,7 +4,7 @@ import { logoutUserActionCreator } from '../redux/actions/authAction'
 const URL_BASE = import.meta.env.VITE_BASE_API
 const options = (token) => ({
     headers: { Authorization: `Bearer ${token}` },
-    timeout: 30000,
+    timeout: 60000,
 })
 
 Axios.defaults.withCredentials = true;
