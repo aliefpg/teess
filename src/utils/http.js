@@ -501,6 +501,7 @@ export const getLaporanJurnalUmum = (params, token) =>
 export const getDBBackup = (token) =>
     Axios.get(`${URL_BASE}/db-backup`, {
         ...options(),
+        responseType: 'blob',
     })
 export const postBulkSiswa = (body, token) =>
     Axios.post(`${URL_BASE}/bulk/siswa`, body, {

@@ -1,16 +1,36 @@
 import React from 'react'
 import { FaCoins } from 'react-icons/fa'
 
+// function BackUpData() {
+//     const handleDownload = () => {
+//         // Replace this URL with the actual endpoint to download the SQL backup
+//         const url = '/path/to/your/backup.sql'
+//         const link = document.createElement('a')
+//         link.href = url
+//         link.setAttribute('download', 'backup.sql') // Specify the filename
+//         document.body.appendChild(link)
+//         link.click()
+//         link.remove()
+//     }
 function BackUpData() {
-    const handleDownload = () => {
-        // Replace this URL with the actual endpoint to download the SQL backup
-        const url = '/path/to/your/backup.sql'
-        const link = document.createElement('a')
-        link.href = url
-        link.setAttribute('download', 'backup.sql') // Specify the filename
-        document.body.appendChild(link)
-        link.click()
-        link.remove()
+    const handleDownload = async () => {
+        try {
+            const response = await getDBBackup()
+
+            // Buat blob dari file SQL
+            const blob = new Blob([response.data], { type: 'application/sql' })
+            const url = window.URL.createObjectURL(blob)
+
+            const link = document.createElement('a')
+            link.href = url
+            link.download = 'backup_db.sql'
+            document.body.appendChild(link)
+            link.click()
+            link.remove()
+            window.URL.revokeObjectURL(url);
+        } catch (error) {
+            console.error('❌ Gagal download backup:', error)
+        }
     }
 
     return (
