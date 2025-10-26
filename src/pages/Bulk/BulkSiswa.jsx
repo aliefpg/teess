@@ -41,7 +41,7 @@ export default function BulkSiswa() {
             <h3>Upload Data Siswa</h3>
             <p>
                 Untuk format .xls/.xlsx gunakan{' '}
-                <a href="https://aswindo.click/?download=12&tmstv=1724766019">
+                <a href="https://back-lake-eta-40.vercel.app/dokumen/template_bulk_siswa.xlsx">
                     Template bulk siswa
                 </a>
             </p>
